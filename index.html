@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comparison operators</title>
+   
+    <title>return type </title>
 </head>
 <body>
-    <script>
-     console.log(4>6)
-
-     console.log(typeof (9>7)) // note:agar comparison operator me typeof krenge to result hamesha boolean ayega.
-     
-     console.log(typeof('5')) //note : agar yeh typeof ke ander cots lagagenge to yeh boolean nahi string hoga.
-
-     console.log(9>=6) // use of greater than or equal to operators.
-
-     console.log(5<=4) //use of less than or equal to operators.
-
-     console.log(5==5)  // single equal to lagakar agar value check krenge to wo error show krenga kyuki js mai hum single = to tab use krenge hai jab hume ek side ki value dusri side assign krni ho uske lie left mai variable hona must hai.
-
-     console.log(5==='5') // yaha pe output false islie aara hai kyuki triple equal kehta hai ki tabhi value ko compare krunga jab dono side same value hogi isme ek side to number hai but dusri side string hai islie false value dera hai
     
-     console.log(5!=5)  //yani is expression ka matlab hai 5 not equal to 5 to is case mai wo result false de dega baki har case me true de dega result
+
+
+    <script>
+
+         //example of return statement 
  
-     console.log(4!=2)    // jase ki is expression me 4 is not equal to 2 to isme result true de dia.
-
-     console.log(5!==6)  // result will true
-
-     console.log(7!==7) // result will false bas jab both side equal hoge tabhi false dega otherwise isme bhi true dega 
+             function generateRandomMove()
+   {
+      let random = Math.random();
+      let randomMove = random * 3 ;
+      return randomMove;
+       
      
-     console.log(5 + 5 === 6 + 4)  // yani yeha isne phle plus kiya bad mai compare kia thats means order of comparison operators is less than arithmetic operators 
-     
-     </script>
+     } 
+      
+       console.log(generateRandomMove());
+
+    // example 2:
+
+
+    function determineDriveStatus()
+    {
+        let age = 21;
+        let status;
+        if (age>18)
+    {
+       status = 'you can drive'
+    }
+       else {
+        status = 'use a bicycle '
+       }
+       return status;
+
+    }
+
+     console.log(determineDriveStatus());
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
