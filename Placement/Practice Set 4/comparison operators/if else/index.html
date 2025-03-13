@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice if else</title>
+</head>
+<body>
+     
+    <script>
+  
+
+       // example 1:
+        console.log("check driving age" )
+        
+        if(18>16){                                   //yani yeh keh rha hai agar (if) 18> 16 ke to jo consolelog mai likha hai wo print krdo 
+        console.log("you are eligible for driving")
+       }
+
+       else (12>18)                                  // agar wo 18 se chota hai to console mai jo likha hai wo print krdo
+       {
+        console.log("sorry you are not eligible ")
+       }
+
+   
+       // example 2: where we can use a variable then use if statement 
+         
+
+       let age = 10;   // yani ki niche wo phle check krega ki kya age 18 se badi hai tabhi wo print krdega condition jo humne curly braces pe di hai
+       if (age>18)
+       {
+        console.log("you are eligible for vote");
+       }
+       if (age<18)
+       {
+        console.log("sorry you are not eligible for vote");
+       }
+ 
+
+       // example 3 :
+// mene is example me conditon di ki agar cost 200 se kam hai to jo console me jo statement hai wo print krdo
+                
+       let cost = 180;
+       if (cost<200)
+       {
+        console.log("you need to add more items");
+       }
+       else                       // remember: yaha pe sirf jo print krwana hai jo executre krenge else{} then console yeh pe condition nahi denge abhi
+       {
+        console.log("successfully  added");
+       }
+    
+
+          
+       //example 3:  yaha pe elseif ladder use kr skte hai various condition apply krne ek lie
+
+       let marks = 33;
+       if(marks<33)
+       {
+        console.log("sorry you are fail");
+       }
+      else if (marks<=33)
+       {
+        console.log("you need to work hard")
+       }
+
+       else 
+       {
+        console.log("congratulations you are passed")
+       }
+     
+
+
+
+   
+    </script>
+</body>
+</html>

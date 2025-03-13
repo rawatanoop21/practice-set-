@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>logical operator </title>
+</head>
+<body>
+    
+    <script>
+ 
+
+
+//example No.1--  using and operator 
+
+    let age = 15;
+
+    console.log(age>18);
+    console.log(age<65);    //note: isme kya hoga phli condition false hori hai but dusri true hori hai so islie if execute nahi hoga kuki and kehta hai dono tarif ki chije true hogi tabhi me true hoga.
+
+
+    if (age>18 && age < 65   )   //and operator me dono condition true honi chhiye yani ki age 18 se jada bhi ho aur 65 se kam bhi ho 
+    console.log('you can drive ');
+   else {
+    console.log('use a bicycle');
+   }
+
+
+
+     // example 2. using or operator (or wale case me tabhi false ayega return jab dono case false hoge otherwise ek bhi true hoga to wo return true hi krega)
+        
+         let marks = 12 ;
+
+       if (marks>25 || marks<1  )   
+             console.log('you are passed ');
+      else {
+    console.log('sorry you are fail');
+   }
+
+  
+
+
+
+
+
+    </script>
+</body>
+</html>

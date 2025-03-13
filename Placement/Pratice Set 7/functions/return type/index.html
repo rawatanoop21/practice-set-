@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>return type </title>
+</head>
+<body>
+    
+
+
+    <script>
+
+         //example of return statement 
+ 
+             function generateRandomMove()
+   {
+      let random = Math.random();
+      let randomMove = random * 3 ;
+      return randomMove;
+       
+     
+     } 
+      
+       console.log(generateRandomMove());
+
+    // example 2:
+    // return jaise hi chalega wse hi function khatam ho jayega
+
+    function determineDriveStatus()
+    {
+        let age = 21;
+        let status;
+        if (age>18)
+    {
+       status = 'you can drive'
+    }
+       else {
+        status = 'use a bicycle '
+       }
+       return status;
+
+    }
+
+     console.log(determineDriveStatus());
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
