@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Local Storage </title>
+</head>
+<body>
+    <script>
+
+
+         let product =
+      {
+        name : "tshirt" ,
+        price: 4500,
+        rating:{
+            stars:4.5,
+            noOfReviews:453,
+        },
+      };
+
+
+      //localStorage.setItem('Anoop', 'Pahadi')  // setItem do chij leta hai key and value to isme Anoop key and coding value hai
+      //localStorage.setItem('age', '24' )
+
+     // console.log(localStorage.getItem('Anoop'));  //note: comment krne ke bad bhi yeh key ki value nikal layega storage se 
+     
+     localStorage.setItem('product', JSON.stringify(product) );
+     let product2 = JSON.parse(localStorage.getItem('product'));
+
+    console.log(product2);
+
+    // localStorage.removeItem('price');
+
+
+
+    </script>
+</body>
+</html>

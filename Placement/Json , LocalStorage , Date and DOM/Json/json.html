@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSOn</title>
+</head>
+<body>
+   <script>
+
+
+     //note : yaha pe isne object ko stringfy ka use krke string me convert kar dia hai 
+      let product =
+      {
+        name : "tshirt" ,
+        price: 4500,
+        rating:{
+            stars:4.5,
+            noOfReviews:453,
+        },
+      };
+      console.log(typeof product );
+      console.log(product);
+      let str = JSON.stringify(product);
+      console.log(typeof str);
+      console.log(str);
+  
+    // ab yaha se string ko wappis object me convert krenge 
+
+    let newProduct =  JSON.parse(str);
+    console.log(typeof newProduct);
+      console.log(newProduct);
+
+
+    </script>
+</body>
+</html>
