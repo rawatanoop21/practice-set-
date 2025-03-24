@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Accumulate pattern</title>
+</head>
+<body>
+    <script>
+    let nums = [2,5,6,7,5,9];
+    let sum = 0;
+    for (let i =0; i < nums.length; i ++){
+        sum+= nums[i];
+     }
+     console.log(`sum of the array is ${sum}`);
+
+     let squares = [];
+     for (let i =0; i < nums.length; i ++){
+        squares[i] = nums[i] * nums[i];       
+        //squares.push = (nums[i] * nums[i]);    //yeh method lagate Tab bhi output same hi ayega 
+     }
+      console.log(squares);
+
+    </script>
+</body>
+</html>
