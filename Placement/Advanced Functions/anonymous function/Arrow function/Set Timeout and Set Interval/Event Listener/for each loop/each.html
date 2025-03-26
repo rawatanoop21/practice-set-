@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>for each loop</title>
+</head>
+<body>
+    <script>
+    //    let arr = [3,5,7,9];
+    //    for (let i =0; i < arr.length; i++){
+    //      console.log(arr[i]);
+    //    }
+
+
+    //    //by for each method
+
+    //    arr.forEach(function(num){
+    //     console.log(num); 
+    //    });
+        
+       //or using this method also by arrow function with for-each
+      //  arr.forEach((num) => console.log(num));
+
+
+      //agar loop bich me band krna hai to 
+
+       let arr = [1,2,3,4,5,6,7,8,9];
+       arr.forEach(num => {
+       if(num ===5){
+        return;
+       }
+    console.log(`visited:${num}`);
+       });
+
+       function search(arr , num ){
+        for (let i = 0 ; i < arr.length; i++){
+            if(arr[i] ===num){
+                console.log(`element found at:${i}`);
+                return;
+            }
+        }
+        console.log('Element was not found');
+       }
+       
+
+
+
+    </script>
+</body>
+</html>

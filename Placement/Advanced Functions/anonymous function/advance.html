@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>anonymous function</title>
+</head>
+<body>
+    <script>
+    
+    // let sum =  function(num1, num2 ){
+    //     return num1 + num2;
+    //   };
+    //   let newSum = sum;
+    // console.log(sum(4,5));
+    // console.log(newSum(4,5));
+
+    // example of this can be passed as arguments to other function.
+
+    let sum =  function(num1, num2 ){
+           return num1 + num2;
+         };
+
+     let sumThreenumbers = function(num1, num2, num3, sumTwoNumbers)
+    {
+     let sum1 = sumTwoNumbers(num1 , num2);
+     return sumTwoNumbers(sum1 , num3);
+    }
+  
+  console.log(sumThreenumbers(4,5,6, sum));
+  
+
+    </script>
+</body>
+</html>
