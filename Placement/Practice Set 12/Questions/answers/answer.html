@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>exercise </title>
+
+    <style>
+        .btn-subscribe{
+            font-size: 15px;
+            height: 20px;
+            width: 80px;
+            background-color: rgb(100, 10, 10);
+            border: none;
+            color: white;
+            border-radius: 4px;
+        }
+       .js-size-double{ 
+            font-size:30px;
+            height: 40px;
+            width: 160px;
+
+       }
+
+    </style>
+</head>
+<body>
+
+    <button class="btn-subscribe" >
+        subscribe
+    </button>
+<script>
+    //answer1
+   let multiply = (num1 , num2) => num1 * num2;
+   console.log(multiply(4 , 8));
+
+
+   //answer2
+
+   let printGreeting = () => console.log('Namaste');
+   let runTwice = inputFunction => {
+     inputFunction();
+     inputFunction();
+      };
+
+   runTwice(printGreeting);
+
+     //answer 3
+    function doubleTheSize(){
+    let buttonElement = document.querySelector('.btn-subscribe');
+    buttonElement.classList.add('js-size-double');
+
+  }
+
+     //answer4
+     let buttonElement = document.querySelector('.btn-subscribe');
+     buttonElement.addEventListener('click' , event =>
+        setTimeout(doubleTheSize , 2000)
+     );
+
+
+
+     //answer5
+
+     let arr = [1,2,3,4,5,6,7];
+     let sum = 0;
+     arr.forEach(num => sum += num);
+     console.log(sum);
+
+     //answer6
+     let squares = arr.map(num => num * num);
+     console.log(squares);
+
+  
+
+</script>    
+</body>
+</html>
